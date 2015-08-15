@@ -4612,17 +4612,15 @@ polyfill-next-selector { content: ':host(:not([grid])) .core-list-viewport > *';
       // Measure physical items & dividers
       var totalSize = 0;
       var count = 0;
-
-
       for (var i=0; i<this._physicalCount; i++) {
         var item = this._physicalItems[i];
         if (!item.hidden) {
           var size = this._itemSizes[i] = item.offsetHeight;
           if (item._isDivider) {
-                var divider = this._physicalDividers[i];
-                if (divider) {
-                  size += (this._dividerSizes[i] = divider.offsetHeight);
-                }
+            var divider = this._physicalDividers[i];
+            if (divider) {
+              size += (this._dividerSizes[i] = divider.offsetHeight);
+            }
           }
           this._physicalSizes[i] = size;
           if (item._isRowStart) {
@@ -6774,7 +6772,7 @@ polyfill-next-selector {
 </script>
 
 </polymer-element>
-<polymer-element name="rab-fast-scroll" extends="core-range" attributes="rotate snaps pin disabled secondaryProgress editable immediateValue dragging sectionValue target" role="scroll" tabindex="0" aria-valuemin="0" aria-valuemax="100" assetpath="../app/components/rab-fast-scroll/">
+<polymer-element name="rab-fast-scroll" extends="core-range" attributes="rotate snaps pin disabled secondaryProgress editable immediateValue dragging sectionValue target" role="scroll" tabindex="0" aria-valuemin="0" aria-valuemax="100" assetpath="../components/rab-fast-scroll/">
 <template>
 
     <style>:host {
