@@ -3,7 +3,7 @@
 
 #### Demo and rab-fast-scroll component
 
-See [demo](http:://www.studiorabota.com/polymer-contact-app.html).  
+See [demo](http://studiorabota.com/labs/polymer-fast-scroll/build/).  
 [rab-fast-scroll](https://gitlab.com/studio.rabota/polymer-fast-scroll) component.
 
 ## Getting started
